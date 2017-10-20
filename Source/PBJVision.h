@@ -253,6 +253,11 @@ static CGFloat const PBJVideoBitRate1280x750 = 5000000 * 8;
 @protocol PBJVisionDelegate <NSObject>
 @optional
 
+// preset
+
+- (void)visionWillChangeCameraPreset:(PBJVision *)vision;
+- (void)visionDidChangeCameraPreset:(PBJVision *)vision;
+
 // session
 
 - (void)visionSessionWillStart:(PBJVision *)vision;
